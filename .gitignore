@@ -1,0 +1,5 @@
+# project
+*.afdesign~lock~
+
+# macos
+.DS_Store
