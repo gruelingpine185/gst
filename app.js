@@ -6,7 +6,7 @@ const port = 3000;
 
 const company = {
   name: "GST",
-  fullName: "Global Security Technologies",
+  fullName: "Global Security Technologies"
 };
 
 app.use(express.static(path.join(__dirname, 'public')));
