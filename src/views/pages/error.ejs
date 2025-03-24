@@ -1,8 +1,8 @@
 <%- include('../partials/head') %>
 <div class="content-con">
     <div class="centered-con">
-        <h1 class="error-code-title">404</h1>
-        <p class="error-code-text">Looks like you're lost :/</p>
+        <h1 class="error-code-title"><%= error.code %></h1>
+        <p class="error-code-text"><%= error.message %></p>
     </div>
 </div>
 <%- include('../partials/footer') %>
