@@ -1,5 +1,6 @@
 # project
 *.afdesign~lock~
+.env
 
 # nodejs
 node_modules/
