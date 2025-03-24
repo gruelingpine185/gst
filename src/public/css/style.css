@@ -1,5 +1,3 @@
-
-
 :root {
     /* --primary: #36454f; */
     --fg: #ffffff;
@@ -21,4 +19,22 @@ body {
     background-color: var(--bg);
     color: var(--fg);
     font-family: 'Inter';
+}
+
+.centered-con {
+    text-align: center;
+}
+
+.content-con {
+    padding: 0 10%;
+}
+
+.error-code-title {
+    font-weight: 900;
+    font-size: 144pt;
+}
+
+.error-code-text {
+    font-weight: bold;
+    font-size: 16pt;
 }
