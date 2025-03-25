@@ -1,12 +1,8 @@
 const path = require('path');
 const config = require('../config');
+const index = require('../routes/index').data;
 const express = require('express');
 const { rateLimit } = require('express-rate-limit');
-
-const company = {
-    name: "GST",
-    fullName: "Global Security Technologies"
-};
 
 const handleError = ({app, error}) => {
     app.use((req, res, next) => {
@@ -19,9 +15,7 @@ const handleError = ({app, error}) => {
 
 const setRoutes = ({app}) => {
     app.get('/', (req, res) => {
-        res.render('pages/index', {
-            company: company
-        });
+        res.render('pages/index', index);
     });
 
     handleError({
