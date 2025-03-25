@@ -1,2 +1,26 @@
 <%- include('../partials/head') %>
+<section class="hero">
+  <div class="container">
+    <div class="row">
+    <div class="seven columns">
+      <h1 class="font-black text-multiline"><%= hero.title %></h1>
+        <% if(hero.bullets.length) { %>
+          <ul>
+            <% for(let i = 0; i < hero.bullets.length; i++) { %>
+              <li><%= hero.bullets[i] %></li>
+            <% } %>
+          </ul> 
+        <% } %>
+        <button class="button-primary"><p><%= hero.button.text %></p></button>
+      </div>
+      <div class="five columns">
+        <% if(hero.image.path === '#') { %>
+            <div class="placeholder-img"></div>
+        <% } else { %> 
+            <img src="<%= hero.image.path %>" alt="<%= hero.image.alt %>">
+        <% } %>
+      </div>
+    </div>
+  </div>
+</section>
 <%- include('../partials/footer') %>

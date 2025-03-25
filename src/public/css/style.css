@@ -1,5 +1,5 @@
 :root {
-    /* --primary: #36454f; */
+    --primary: #36454f;
     --fg: #ffffff;
     --bg: #1b2328;
 }
@@ -13,20 +13,38 @@
 html body {
     width: 100%;
     height: 100%;
+    font-family: 'Inter';
 }
 
 body {
     background-color: var(--bg);
     color: var(--fg);
-    font-family: 'Inter';
 }
 
-.centered-con {
-    text-align: center;
+section {
+    padding: 4rem 0;
 }
 
-.content-con {
-    padding: 0 10%;
+.font-bold {
+    font-weight: 700;
+}
+
+.font-black {
+    font-weight: 900;
+}
+
+.text-multiline {
+    white-space: pre-wrap;
+}
+
+.hero {
+    margin-top: 16rem;
+}
+
+.placeholder-img {
+    background-color: var(--primary);
+    width: 100%;
+    height: 400px;
 }
 
 .error-code-title {
@@ -38,3 +56,5 @@ body {
     font-weight: bold;
     font-size: 16pt;
 }
+
+/* TODO: create media queries */
