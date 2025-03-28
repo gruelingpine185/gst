@@ -1,6 +1,6 @@
 const path = require('path');
 const config = require('../config');
-const index = require('../routes/index').data;
+const index = require('../routes/index');
 const express = require('express');
 const { rateLimit } = require('express-rate-limit');
 
@@ -14,10 +14,7 @@ const handleError = ({app, error}) => {
 };
 
 const setRoutes = ({app}) => {
-    app.get('/', (req, res) => {
-        res.render('pages/index', index);
-    });
-
+    index.init({app: app});
     handleError({
         app: app,
         error: {

@@ -3,21 +3,21 @@
   <div class="container">
     <div class="row">
     <div class="seven columns">
-      <h1 class="font-black text-multiline"><%= hero.title %></h1>
-        <% if(hero.bullets.length) { %>
+      <h1 class="font-black text-multiline"><%= heroSection.title %></h1>
+        <% if(heroSection.bullets.length) { %>
           <ul>
-            <% for(let i = 0; i < hero.bullets.length; i++) { %>
-              <li><%= hero.bullets[i] %></li>
+            <% for(let i = 0; i < heroSection.bullets.length; i++) { %>
+              <li><%= heroSection.bullets[i] %></li>
             <% } %>
           </ul> 
         <% } %>
-        <button class="button-primary"><p><%= hero.button.text %></p></button>
+        <button class="button-primary"><p><%= heroSection.button.text %></p></button>
       </div>
       <div class="five columns">
-        <% if(hero.image.path === '#') { %>
+        <% if(heroSection.image.path === '#') { %>
             <div class="placeholder-img"></div>
         <% } else { %> 
-            <img src="<%= hero.image.path %>" alt="<%= hero.image.alt %>">
+            <img src="<%= heroSection.image.path %>" alt="<%= heroSection.image.alt %>">
         <% } %>
       </div>
     </div>
