@@ -10,6 +10,7 @@ const min_to_ms = (n) => {
 };
 
 const setup_routes = (app) => {
+  index_route.init(app);
 };
 
 const init = (app) => {

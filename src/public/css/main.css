@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Inter Variable';
+    src: url('/typefaces/InterVariable.ttf');
+}
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('/typefaces/IBMPlexMono-Regular.ttf');
+}
+
+/* overwrite bulma's defaults */
+:root {
+    --bulma-family-primary: 'Inter Variable', sans-serif;
+}
+
+.is-size-0 {
+    font-size: 3.5rem;
+}
+
+.has-text-weight-black {
+    font-weight: 900;
+}
+
+.text-prewrap {
+    white-space: pre-wrap;
+}

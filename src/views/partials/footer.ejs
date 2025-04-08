@@ -1,0 +1,21 @@
+<footer class="footer">
+  <section class="section">
+    <div class="columns">
+      <% footerSection.columns.forEach((column) => { %>
+        <div class="column">
+          <h5 class="title is-5"><%= column.title %></h5>
+          <ul>
+            <% column.links.forEach((link) => { %>
+              <li>
+                <a href="<%= link.href %>"><%= link.text %></a>
+              </li>
+            <% }); %>
+          </ul>
+        </div>
+      <% }); %>
+    </div>
+    <p class="has-text-centered"><%= footerSection.copywrite %></p>
+  </section>
+</footer>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<%- include('../partials/header'); %>
+<section class="section hero">
+  <div class="hero-body">
+    <h1 class="title is-size-0 text-prewrap"><%= heroSection.title %></h1>
+    <div class="content">
+      <ul class="block">
+        <% heroSection.bullets.forEach((bullet) => { %>
+          <li class="block"><%= bullet %></li>
+        <% }); %>
+      </ul>
+    </div>
+    <button class="button"><%= heroSection.button.text %></button>
+  </div>
+</section>
+<section class="section">
+  <h2 class="title has-text-centered"><%= featureSection.title %></h2>
+</section>
+<section class="section">
+  <h2 class="title"><%= demoSection.title %></h2>
+  <div class="form">
+    <div class="columns">
+      <div class="column">
+        <label for="" class="label">Fisrt Name</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="First Name">
+        </div>
+      </div>
+      <div class="column">
+        <label for="" class="label">Last Name</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="Last Name">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<%- include('../partials/footer'); %>
