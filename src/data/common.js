@@ -4,7 +4,7 @@ const company = {
 };
 
 const footerSection = {
-  copywrite: `\xa9 ${new Date().getFullYear()} ${company.fullName}`,
+  copywrite: `\u00a9 ${new Date().getFullYear()} ${company.fullName}`,
   columns: [
     {
       title: company.name,
