@@ -1,6 +1,13 @@
+const companyName = "GST";
+const companyFullName = "Global Security Technologies";
+
 const company = {
-  name: "GST",
-  fullName: "Global Security Technologies"
+  name: companyName,
+  fullName: companyFullName,
+  bio: [
+    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quasi odio natus quae pariatur!",
+    "Numquam atque ea molestiae voluptates, sunt rem. Consequuntur nostrum culpa veritatis expedita, illo maiores itaque amet?"
+  ]
 };
 
 const footerSection = {

@@ -1,6 +1,7 @@
 const common = require('./common.js').data;
 
 const data = {
+  company: common.company,
   title: `Home | ${common.company.name}`,
   heroSection: {
     title: "Your data is yours.\nLet\'s keep it that way",

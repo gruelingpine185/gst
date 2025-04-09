@@ -1,18 +1,40 @@
-<footer class="footer">
+<footer class="footer pb-0">
   <section class="section">
-    <div class="columns">
-      <% footerSection.columns.forEach((column) => { %>
-        <div class="column">
-          <h5 class="title is-5"><%= column.title %></h5>
-          <ul>
-            <% column.links.forEach((link) => { %>
-              <li>
-                <a href="<%= link.href %>"><%= link.text %></a>
-              </li>
-            <% }); %>
-          </ul>
+    <div class="columns pb-4">
+      <div class="column is-4">
+        <h6 class="title is-6"><%= company.fullName %></h6>
+        <div class="content">
+          <% company.bio.forEach((paragraph) => { %>
+            <p class="has-text-justified"><%= paragraph %></p>
+          <% }); %>
         </div>
-      <% }); %>
+      </div>
+      <div class="column is-offset-1">
+        <div class="columns">
+          <% footerSection.columns.forEach((column) => { %>
+            <div class="column">
+              <h6 class="title is-6"><%= column.title %></h6>
+              <ul>
+                <% column.links.forEach((link) => { %>
+                  <li>
+                    <a href="<%= link.href %>"><%= link.text %></a>
+                  </li>
+                <% }); %>
+              </ul>
+            </div>
+          <% }); %>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="level">
+      <div class="level-left">
+        <p class="level-item"><%= footerSection.copywrite %></p>
+      </div>
+      <div class="level-right">
+        <a href="#" class="level-item">Terms of Service</a>
+        <a href="#" class="level-item">Privacy</a>
+      </div>
     </div>
     <p class="has-text-centered"><%= footerSection.copywrite %></p>
   </section>
