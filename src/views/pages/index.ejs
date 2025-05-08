@@ -1,5 +1,5 @@
 <%- include('../partials/header'); %>
-<section class="section hero">
+<section class="hero">
   <div class="hero-body">
     <h1 class="title is-size-0 text-prewrap"><%= heroSection.title %></h1>
     <div class="content">
@@ -9,29 +9,70 @@
         <% }); %>
       </ul>
     </div>
+    <img src="<%= heroSection.image.href %>" alt="">
     <button class="button"><%= heroSection.button.text %></button>
   </div>
 </section>
 <section class="section">
   <h2 class="title has-text-centered"><%= featureSection.title %></h2>
+  <div class="columns">
+    <% featureSection.cards.forEach((card) => { %>
+      <div class="column">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <figure class="image is-1by1 is-128x128 mx-auto">
+                <img src="<%= card.href %>" alt="">
+              </figure>
+            </div>
+            <div class="content">
+              <%= card.text %>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% }); %>
+  </div>
 </section>
 <section class="section">
-  <h2 class="title"><%= demoSection.title %></h2>
-  <div class="form">
+  <form id="demo-form" method="post">
+    <h2 class="title"><%= demoSection.title %></h2>
+    <div class="field">
+      <label for="" class="label">Company</label>
+      <div class="control">
+        <input class="input" type="text" placeholder="Your Company">
+      </div>
+    </div>
     <div class="columns">
       <div class="column">
-        <label for="" class="label">Fisrt Name</label>
-        <div class="control">
-          <input class="input" type="text" placeholder="First Name">
+        <div class="field">
+          <label for="firstName" class="label" name>Fisrt Name</label>
+          <div class="control">
+            <input class="input" name="firstName" type="text" placeholder="First Name">
+          </div>
         </div>
       </div>
       <div class="column">
-        <label for="" class="label">Last Name</label>
-        <div class="control">
-          <input class="input" type="text" placeholder="Last Name">
+        <div class="field">
+          <label for="lastName" class="label">Last Name</label>
+          <div class="control">
+            <input class="input" name="lastName" type="text" placeholder="Last Name">
+          </div>
         </div>
       </div>
     </div>
-  </div>
+    <div class="field">
+      <label for="email" class="label">Email</label>
+      <div class="control">
+        <input class="input" name="email" type="email" placeholder="example@gmail.com">
+      </div>
+    </div>
+    <div class="field">
+      <div class="control">
+        <button type="submit" class="button is-link">Submit</button>
+      </div>
+    </div>
+  </form>
 </section>
+<script src="/js/form.js"></script>
 <%- include('../partials/footer'); %>

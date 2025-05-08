@@ -5,8 +5,11 @@ const company = {
   name: companyName,
   fullName: companyFullName,
   bio: [
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quasi odio natus quae pariatur!",
-    "Numquam atque ea molestiae voluptates, sunt rem. Consequuntur nostrum culpa veritatis expedita, illo maiores itaque amet?"
+    `${companyFullName} is a purpose-built cybsersecurity company striving to \
+help companies identify and patch vulnerabilities in their software and \
+infrastructure. Through our services, companies can serve their clients with \
+the assurance that their data is secure and products are both resilient and \
+aligned with industry best practices.`
   ]
 };
 
@@ -29,14 +32,6 @@ const footerSection = {
           href: "#"
         }
       ]
-    },
-    {
-      title: "Features",
-      links: []
-    },
-    {
-      title: "Solutions",
-      links: []
     },
     {
       title: "Resources",

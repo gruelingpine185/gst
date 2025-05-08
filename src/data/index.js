@@ -14,12 +14,26 @@ const data = {
       text: "Request a Demo"
     },
     image: {
-      path: "#",
+      href: "#",
       alt: ""
     }
   },
   featureSection: {
-    title: "Know Your Vulnerabilities Before They Do"
+    title: "Know Your Vulnerabilities Before They Do",
+    cards: [
+      {
+        href: "#",
+        text: "blah"
+      },
+      {
+        href: "#",
+        text: "blahhhhh"
+      },
+      {
+        href: "#",
+        text: "blahhhhh"
+      }
+    ]
   },
   demoSection: {
     title: "Request a Demo"
