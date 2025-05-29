@@ -13,6 +13,32 @@ aligned with industry best practices.`
   ]
 };
 
+const navSection = {
+  left: {
+    links: []
+  },
+  right: {
+    links: [
+      {
+        text: "Overwatch",
+        href: "#"
+      },
+      {
+        text: "Breakthrough",
+        href: "#"
+      },
+      {
+        text: "NetCommand",
+        href: "#"
+      },
+      {
+        text: "Demo",
+        href: "#"
+      }
+    ]
+  }
+};
+
 const footerSection = {
   copywrite: `\u00a9 ${new Date().getFullYear()} ${company.fullName}`,
   columns: [
@@ -21,7 +47,7 @@ const footerSection = {
       links: [
         {
           text: "About Us",
-          href: "#"
+          href: ""
         },
         {
           text: "Careers",
@@ -51,6 +77,7 @@ const footerSection = {
 
 const data = {
   company,
+  navSection,
   footerSection
 };
 

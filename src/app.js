@@ -23,7 +23,7 @@ const init = (app) => {
   });
 
   // configure express
-  app.use(limiter);
+  // app.use(limiter);
   app.use(express.static(path.join(__dirname, 'public')));
   app.set('views', path.join(__dirname, 'views'));
   app.set('view engine', 'ejs');

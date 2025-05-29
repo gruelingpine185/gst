@@ -1,26 +1,49 @@
 @font-face {
-    font-family: 'Inter Variable';
-    src: url('/typefaces/InterVariable.ttf');
+  font-family: 'Inter Variable';
+  src: url('/typefaces/InterVariable.ttf');
 }
 
 @font-face {
-    font-family: 'IBM Plex Mono';
-    src: url('/typefaces/IBMPlexMono-Regular.ttf');
+  font-family: 'IBM Plex Mono';
+  src: url('/typefaces/IBMPlexMono-Regular.ttf');
 }
 
 /* overwrite bulma's defaults */
 :root {
-    --bulma-family-primary: 'Inter Variable', sans-serif;
+  --bulma-family-primary: 'Inter Variable', sans-serif;
+}
+
+img {
+  user-select: none;
 }
 
 .is-size-0 {
-    font-size: 3.5rem;
+  font-size: 3.5rem;
 }
 
 .has-text-weight-black {
-    font-weight: 900;
+  font-weight: 900;
 }
 
 .text-prewrap {
-    white-space: pre-wrap;
+  white-space: pre-wrap;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.fade-in {
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+
+  to {
+    opacity: 1;
+  }
 }
